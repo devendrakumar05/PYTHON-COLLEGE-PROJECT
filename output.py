@@ -1,6 +1,6 @@
 # Shopping List Program
 
-# Function to display the menu
+
 def display_menu():
     print("\n1. Add item to the list")
     print("2. Remove item from the list")
@@ -8,12 +8,12 @@ def display_menu():
     print("4. Clear the list")
     print("5. Exit")
 
-# Function to add an item to the list
+
 def add_item(item, shopping_list):
     shopping_list.append(item)
     print(item, "added to the list.")
 
-# Function to remove an item from the list
+
 def remove_item(item, shopping_list):
     if item in shopping_list:
         shopping_list.remove(item)
@@ -21,18 +21,18 @@ def remove_item(item, shopping_list):
     else:
         print(item, "is not in the list.")
 
-# Function to view the shopping list
+
 def view_list(shopping_list):
     print("\nShopping List:")
     for item in shopping_list:
         print("-", item)
 
-# Function to clear the shopping list
+
 def clear_list(shopping_list):
     shopping_list.clear()
     print("Shopping list cleared.")
 
-# Main function
+
 def main():
     shopping_list = []
 
@@ -56,6 +56,6 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 
-# Calling the main function
+#  main function
 '''if _name_ == "_main_":'''
 main()
